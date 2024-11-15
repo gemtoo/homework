@@ -1,0 +1,5 @@
+services:
+  program-manager:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
