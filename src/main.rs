@@ -18,7 +18,7 @@ const INPUTS: [&str; 8] = [
     "program8,password8,pid123123,17:04,0.3,5,1.5,10,msp1-1,1,0,ac=*-666555",
 ];
 
-pub const TIME_SPEEDUP_FACTOR: f32 = 100000.0;
+pub const TIME_SPEEDUP_FACTOR: f32 = 1.0;
 
 fn main() {
     misc::boot();
