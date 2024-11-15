@@ -1,0 +1,25 @@
+[package]
+name = "program-manager"
+version = "0.1.0"
+edition = "2021"
+
+[profile.dev]
+strip = true
+opt-level = 0
+codegen-units = 256
+
+[profile.release]
+strip = true
+lto = true
+opt-level = 3
+codegen-units = 1
+
+[dependencies]
+chrono = "0.4.38"
+colored = { version = "2.1.0", features = ["no-color"] }
+ctrlc = { version = "3.4.5", features = ["termination"] }
+fern = { version = "0.7.0", features = ["colored"] }
+humantime = "2.1.0"
+log = "0.4.22"
+rand = "0.8.5"
+std-semaphore = "0.1.0"
